@@ -13,7 +13,7 @@
 
 - 📫 How to reach me **nguyenandy1402@gmail.com**
 
-- 📄 Know about my experiences [https://docs.google.com/document/d/1EB4FdzMxgWgLXQK4Tnu02iwSnFnhw735gh8qLKhdQ2Q/edit?usp=sharing](https://docs.google.com/document/d/1EB4FdzMxgWgLXQK4Tnu02iwSnFnhw735gh8qLKhdQ2Q/edit?usp=sharing)
+- 📄 Know about my experiences [https://docs.google.com/document/d/1EB4FdzMxgWgLXQK4Tnu02iwSnFnhw735gh8qLKhdQ2Q/edit?usp=sharing](https://docs.google.com/document/d/1gbHnrB8RzqsMRGEghKdh3MifAtUly07oN58FMUdDM3s/edit?usp=sharing)
 
 - ⚡ Fun fact **I play Soccer, Basketball, and Poker**
 
