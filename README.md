@@ -9,13 +9,13 @@
 
 - 👯 I’m looking to collaborate on **Case Competitions**
 
-- 🤝 I’m looking for help with **Finding related US Internships**
+- 🤝 I’m looking for help with **US Internship opportunities**
 
 - 📫 How to reach me **nguyenandy1402@gmail.com**
 
 - 📄 Know about my experiences [https://docs.google.com/document/d/1EB4FdzMxgWgLXQK4Tnu02iwSnFnhw735gh8qLKhdQ2Q/edit?usp=sharing](https://docs.google.com/document/d/1gbHnrB8RzqsMRGEghKdh3MifAtUly07oN58FMUdDM3s/edit?usp=sharing)
 
-- ⚡ Fun fact **I play Soccer, Basketball, and Poker**
+- ⚡ Fun fact **I am a Soccer and Basketball player, and a Chess Candidate. I love traveling**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
