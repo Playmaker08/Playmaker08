@@ -1,0 +1,802 @@
+/* Global Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  color: #ededed;
+  background: #021d17; /* Dark greenish-blue background for a finance tone */
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 10%;
+  background: #01251e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.logo {
+  font-size: 25px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+}
+
+.tagline {
+  font-size: 14px;
+  color: #95d5b2;
+  opacity: 0;
+  animation: slideRight 1s ease forwards;
+  animation-delay: 0.3s;
+  margin-top: 3px;
+}
+
+.navbar a {
+  display: inline-block;
+  font-size: 18px;
+  color: #ededed;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 35px;
+  transition: 0.3s;
+  opacity: 0;
+  animation: slideTop 0.5s ease forwards;
+  animation-delay: calc(0.2s * var(--i));
+}
+
+.navbar a:hover {
+  color: #52b788;
+}
+
+/* Home Section */
+.home {
+  position: relative;
+  width: 100%;
+  min-height: 100vh; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 70px; /* ensures content isn’t hidden behind fixed header */
+  overflow: hidden;  /* in case banner extends */
+}
+
+/* Banner Container */
+.home-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.home-banner img {
+  width: 100%;
+  height: auto; /* maintain aspect ratio */
+  object-fit: cover;
+  display: block;
+}
+
+/* Overlaid Text Container */
+.home-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  max-width: 800px;
+  padding: 0 20px;
+}
+
+/* Large Title */
+.home-title {
+  font-size: 72px; /* 50% larger than original 48px */
+  margin-bottom: 20px;
+  font-weight: 700;
+  /* Kept the light pink color */
+  color: #ffc0cb;
+}
+
+/* Description Paragraph */
+.home-description {
+  max-width: 600px;
+  margin: 0 auto 30px;
+  line-height: 1.6;
+  font-size: 24px; /* explicitly 50% larger (from an assumed 16px base) */
+  color: #fff;    /* bright white color */
+}
+
+/* Home Social Icons (now matching Contact icons style) */
+.home-sci {
+  margin-bottom: 25px;
+}
+.home-sci a {
+  margin-right: 15px;
+  font-size: 32px;
+  color: #95d5b2;
+  transition: color 0.3s ease;
+}
+.home-sci a:hover {
+  color: #74c69d;
+}
+
+/* CTA Buttons */
+.home-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: center;
+  margin-top: 10px;
+}
+.btn-home {
+  display: inline-block;
+  background: #95d5b2;
+  color: #021d17;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px #95d5b2, 0 0 25px #95d5b2;
+}
+.btn-home:hover {
+  background: #74c69d;
+  box-shadow: 0 0 10px #74c69d, 0 0 30px #74c69d;
+  color: #021d17;
+}
+
+/* Responsive Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+  .home-title {
+    font-size: 54px; /* adjusted proportionally for mobile (50% larger than default) */
+  }
+  .btn-home {
+    padding: 10px 20px;
+  }
+}
+
+/* About Section: Two-Column Layout */
+.about {
+  padding: 80px 10%;
+  background: #021d17; /* Dark greenish-blue background */
+  color: #ededed;
+}
+
+/* Container for image and text */
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: flex-start; /* Align items to the left for a slight leftward shift */
+}
+
+/* About Image: Increase size by 20% and shift left */
+.about-img {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; /* Center the image + button horizontally */
+  margin-right: -20px; /* Preserve the slight left shift, if desired */
+}
+
+.about-img img {
+  width: 336px; /* Increased 20% from 280px */
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Resume Button Style (placed below the headshot) */
+.resume-button {
+  display: inline-block;
+  margin-top: 15px;
+  background: #95d5b2;
+  color: #021d17;
+  padding: 12px 24px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 5px #95d5b2, 0 0 25px #95d5b2;
+}
+.resume-button:hover {
+  background: #74c69d;
+  box-shadow: 0 0 10px #74c69d, 0 0 30px #74c69d;
+  color: #021d17;
+}
+
+/* About Info: Give extra space */
+.about-info {
+  flex: 2;
+  padding-left: 20px;
+}
+
+/* Heading style for the "Curious about me?" section */
+.about-heading {
+  font-size: 30px;
+  color: #74d69d;
+  margin-bottom: 1rem;
+}
+
+/* About text paragraphs */
+.about-info p {
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 1.5rem;
+}
+
+/* Highlight text */
+.about-info strong {
+  color: #95d5b2;
+}
+
+/* Subheading style within the about content */
+.about-info h3 {
+  font-size: 22px;
+  color: #74d69d;
+  margin-top: 1.5rem;
+  margin-bottom: 0.8rem;
+}
+
+/* Interest link styling (for the chess icon) */
+.interest-link {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+.interest-link:hover {
+  color: #74c69d;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .about-img {
+    margin-right: 0;
+  }
+  .about-info {
+    padding-left: 0;
+    max-width: 100%;
+  }
+}
+
+/* Skills */
+/* --------------------------------------------------- */
+/* Heading: "My Skills" in light green color */
+.sub-title {
+  text-align: center;
+  font-size: 40px;
+  margin-top: 100px;
+  margin-bottom: 30px;
+  color: #74c69d; /* Light green color */
+}
+
+/* =================================================== */
+/* Skills Section Layout */
+#skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: space-around;
+  padding-bottom: 60px;
+}
+
+/* Each skills-column for tech or professional skills */
+.skills-column {
+  flex: 1;
+  min-width: 320px;
+  max-width: 600px;
+}
+
+.heading1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  text-decoration-thickness: 2px;
+  color: #ededed;
+}
+
+/* =================================================== */
+/* Technical Skills: Horizontal Bars */
+.Technical-bars .bar {
+  margin-bottom: 25px;
+}
+.Technical-bars .bar .info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+.Technical-bars .bar .info .percent {
+  font-weight: 500;
+  color: #ededed;
+  margin-left: 10px;
+}
+.progress-line {
+  position: relative;
+  width: 100%;
+  height: 6px;
+  background-color: #01251e;
+  border-radius: 3px;
+}
+.progress-line span {
+  display: block;
+  height: 100%;
+  background-color: #52b788;
+  border-radius: 3px;
+  animation: fillBar 1.5s forwards;
+}
+
+/* Animate from 0 to the final inline width (e.g. 95%) */
+@keyframes fillBar {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: inherit; /* inherits from inline style width: 95%; etc. */
+  }
+}
+
+/* =================================================== */
+/* Professional Skills: Radial/Circular Bars */
+.radial-bars {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 20px; /* extra spacing between rows */
+}
+
+.radial-bar {
+  width: 140px;
+  height: 140px;
+  position: relative;
+}
+
+.radial-bar svg {
+  width: 140px;
+  height: 140px;
+  transform: rotate(-90deg);
+}
+
+.radial-bar .progress-bar {
+  stroke: #01251e; /* background circle color */
+  stroke-width: 10;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+}
+
+.radial-bar .path {
+  stroke: #52b788; /* "filled" color */
+  stroke-width: 10;
+  fill: transparent;
+  stroke-dasharray: 502;
+  /* The offset is set inline for each skill; e.g. style="stroke-dashoffset:50.2;" */
+  transition: stroke-dashoffset 1s;
+}
+
+.radial-bar .percentage {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+  font-weight: 500;
+  color: #ededed;
+}
+
+.radial-bar .text {
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 14px;
+  color: #ededed;
+  text-align: center;
+  width: 100%;
+}
+
+/* =================================================== */
+/* --- Headings: Color "Latest" Light Green --- */
+.latest {
+  color: #74c69d;
+}
+
+/* --- Spacing --- */
+/* One "space" between each "Latest ..." heading and its projects grid */
+.main-text h2 {
+  margin-bottom: 1.5rem; /* adjust as needed (e.g., 1.5rem ≈ 24px) */
+}
+
+/* Two "spaces" between sections */
+section {
+  margin: 3rem 0; /* adjust as needed (e.g., 3rem ≈ 48px top and bottom) */
+}
+
+/* --- Grid Layout for Tech Projects (5 columns) --- */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* This now matches the business grid */
+  gap: 20px;
+  justify-items: center;
+}
+
+/* --- Grid Layout for Business Projects (4 columns) --- */
+.business-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  justify-items: center;
+}
+
+/* --- Responsive Breakpoints --- */
+@media (max-width: 1200px) {
+  .tech-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .business-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  .tech-grid, .business-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 480px) {
+  .tech-grid, .business-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* --- Card "Row" Styling (Project Container) --- */
+.row {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;  /* ensures the item spans its grid column */
+  max-width: 300px; /* optional cap to keep images from stretching too wide */
+}
+
+/* --- Project Image Styling --- */
+.row img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.5s;
+  display: block;
+  object-fit: cover;
+}
+
+/* Zoom effect on hover */
+.row:hover img {
+  transform: scale(1.1);
+}
+
+/* --- Hover Layer Styling --- */
+.layer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), #74c69d);
+  border-radius: 8px;
+  transition: height 0.5s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Expand the overlay on hover */
+.row:hover .layer {
+  height: 100%;
+}
+
+/* --- Overlay Text & Icon Styling --- */
+.layer h5 {
+  color: #ffc0cb; /* Updated to light pink */
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.layer p {
+  color: #ffc0cb; /* Updated to light pink */
+  font-size: 14px;
+  line-height: 1.4;
+  padding: 0 15px;
+}
+
+.layer a i {
+  margin-top: 15px;
+  font-size: 28px;
+  color: #121212;
+  background: #eaeaea;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+/* Services */
+.services {
+  padding: 60px 10%;
+}
+.services .container {
+  margin-top: 50px;
+}
+.services-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+.services-list div {
+  background-color: #01251e;
+  padding: 30px;
+  border-radius: 8px;
+  transition: 0.3s;
+  text-align: center;
+}
+.services-list div:hover {
+  transform: translateY(-5px);
+}
+.services-list i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #95d5b2;
+}
+.services-list h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #ededed;
+}
+.services-list p {
+  font-size: 14px;
+  color: #d4d4d4;
+  margin-bottom: 15px;
+}
+.read {
+  display: inline-block;
+  background: #52b788;
+  color: #021d17;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 0 5px #52b788, 0 0 10px #52b788;
+}
+.read:hover {
+  box-shadow: 0 0 5px #95d5b2, 0 0 15px #95d5b2;
+}
+
+/* Certificates Section */
+.certificates {
+  padding: 60px 10%;
+  background: #021d17;
+  color: #ededed;
+}
+
+.certificates .sub-title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+}
+.certificates .sub-title span {
+  color: #74c69d;
+}
+
+.cert-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.cert-item {
+  background: #01251e;
+  border-radius: 8px;
+  padding: 20px 25px;
+  box-shadow: 0 0 5px #74c69d;
+  transition: transform 0.3s ease;
+}
+.cert-item:hover {
+  transform: translateY(-5px);
+}
+
+.cert-item h3 {
+  font-size: 20px;
+  margin-bottom: 5px;
+  color: #ededed;
+  font-weight: 600;
+}
+
+.cert-item p {
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #d4d4d4;
+}
+
+.cert-item a {
+  display: inline-flex;
+  align-items: center;
+  font-size: 16px;
+  color: #74c69d;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+.cert-item a:hover {
+  color: #52b788;
+}
+.cert-item a i {
+  margin-left: 5px;
+  transition: transform 0.3s ease;
+}
+.cert-item a:hover i {
+  transform: translateX(5px);
+}
+
+/* Contact Section */
+.contact {
+  padding: 100px 10%;
+}
+
+.contact-wrapper {
+  display: grid; 
+  grid-template-columns: 1fr 1fr; 
+  gap: 3rem; 
+  align-items: flex-start;
+}
+
+.contact-text {
+  margin-bottom: 1.5rem;
+}
+
+.light-green {
+  color: #74c69d; 
+  font-weight: 700;
+}
+
+.contact-list {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+.contact-list li {
+  margin-bottom: 10px;
+}
+
+.contact-icons a {
+  margin-right: 15px;
+  font-size: 32px;      
+  color: #95d5b2;       
+  transition: color 0.3s ease;
+}
+.contact-icons a:hover {
+  color: #74c69d;       
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+}
+.contact-form form input,
+.contact-form form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 14px;
+  background: #01251e;
+  color: #d4d4d4;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+}
+.contact-form form .send {
+  background: #74c69d;
+  color: #021d17;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 0 5px #74c69d, 0 0 20px #74c69d;
+}
+.contact-form form .send:hover {
+  box-shadow: 0 0 10px #95d5b2, 0 0 25px #95d5b2;
+}
+
+/* Small Screen (Mobile) Adjustments */
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Footer */
+.last-text {
+  text-align: center;
+  background: #01251e;
+  padding: 15px 0;
+  margin-top: 60px;
+}
+.last-text p {
+  font-size: 14px;
+  color: #ededed;
+}
+
+/* Back to Top Button */
+.top {
+  position: fixed;
+  bottom: 1.8rem;
+  right: 1.8rem;
+}
+.top i {
+  color: #021d17;
+  background: #95d5b2;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* Keyframe Animations */
+@keyframes slideRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes slideTop {
+  0% {
+    opacity: 0;
+    transform: translateY(100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@keyframes fillBar {
+  to {
+    width: 100%;
+  }
+}
+@keyframes animate-bar {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animate-path {
+  to {
+    stroke-dashoffset: 0;
+  }
+}

@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Andy’s Portfolio</title>
+
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="stylesheet.css" />
+  <!-- Boxicons & FontAwesome -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-papK+z/...="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  />
+  <!-- Typed.js Library -->
+  <script src="https://unpkg.com/typed.js@2.0.12/dist/typed.umd.js"></script>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo-container">
+      <a href="#" class="logo">Andy’s Portfolio</a>
+      <p class="tagline">The Data Magician <i class="fa-solid fa-hat-wizard"></i></p>
+    </div>
+    <nav class="navbar">
+      <a href="#home" style="--i:1;" class="active">Home</a>
+      <a href="#about" style="--i:2;">About</a>
+      <a href="#skills" style="--i:3;">Skills</a>
+      <a href="#tech-projects" style="--i:4;">Tech Projects</a>
+      <!-- Updated link: Liberal Arts -> Business Projects -->
+      <a href="#business-projects" style="--i:5;">Business Projects</a>
+      <a href="#services-offered" style="--i:6;">Services</a>
+      <a href="#certificates" style="--i:7;">Certificates</a>
+      <a href="#contact" style="--i:8;">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <!-- Banner Container -->
+    <div class="home-banner">
+      <img src="./images/premium_photo-1673688152102-b24caa6e8725.avif" alt="Banner Image" loading="lazy">
+    </div>
+    <!-- Overlaid content on top of the banner -->
+    <div class="home-content">
+      <!-- Light pink BIG greeting -->
+      <h1 class="home-title" style="color: #ffc0cb;">
+        BIG 👋 TO VISITORS
+      </h1>
+      <!-- Animated line using Typed.js -->
+      <p class="animated-line"></p>
+      <!-- Original description -->
+      <p class="home-description">
+        Welcome to Andy's world where he presents his business analytics expertise, 
+        creativity-driven approach, and passion for impactful solutions.
+      </p>
+      <!-- Social Icons -->
+      <div class="home-sci">
+        <a href="https://www.facebook.com/ongvuangoaihanganh/" class="bx bxl-facebook"></a>
+        <a href="https://www.instagram.com/andynguyen_21/" class="bx bxl-instagram"></a>
+        <a href="https://www.linkedin.com/in/andynguyen08/" class="bx bxl-linkedin"></a>
+      </div>
+      <!-- CTA Buttons -->
+      <div class="home-buttons">
+        <a href="#about" class="btn-home">About Me</a>
+        <a href="#contact" class="btn-home">Contact Me</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section: Two-Column Layout -->
+  <section class="about" id="about">
+    <div class="about-container">
+      <!-- Left Column: Headshot and Resume Button -->
+      <div class="about-img">
+        <img src="./images/image0-4.jpeg" alt="Andy Nguyen Portrait" loading="lazy" />
+        <a href="https://docs.google.com/document/d/1gbHnrB8RzqsMRGEghKdh3MifAtUly07oN58FMUdDM3s/edit?tab=t.0" target="_blank" class="resume-button">Résumé Showcase</a>
+      </div>
+      <!-- Right Column: About Text -->
+      <div class="about-info">
+        <h2 class="about-heading">Curious about me?</h2>
+        <p>
+          My name is <strong>Andy Nguyen</strong>. I was raised in Ho Chi Minh City, Vietnam, and I am currently based in the United States, pursuing a double major in Business Analytics and Economics, with a minor in Computer Science. I am driven by a passion for converting complex data into actionable insights, crafting innovative marketing strategies, and using research to generate real-world impact. In addition, I am deeply invested in advanced data visualization, as well as community-driven projects that promote financial literacy and inclusive growth.
+        </p>
+        <p>
+          My MBTI is <strong>ENFJ-A</strong> (Extraverted, Intuitive, Feeling, Judging). I excel in collaborative environments that empower communities and deliver measurable outcomes. Curiosity motivates me to explore side projects in marketing, design, and data visualization—embracing continuous learning and professional growth.
+        </p>
+        <p>
+          My mission is to apply my data analytics expertise to foster growth, spur innovation, and cultivate meaningful connections. I embrace opportunities to step beyond my comfort zone, master emerging technologies, and work with diverse teams to create positive change.
+        </p>
+        <h3>Organizations</h3>
+        <p>
+          Treasurer of Tiger Catholic; Collaborator in DePauw Vietnamese Student Association; Member of Data Science Club, Gamma Iota Sigma, Marketing Group, Consulting Group, and Prindle Institute for Ethics.
+        </p>
+        <h3>More about my interests</h3>
+        <p>
+          Sports: Soccer (Midfielder) <i class="fa-solid fa-futbol"></i>, Basketball (Small Forward) <i class="fa-solid fa-basketball-ball"></i>, and Chess Candidate 
+          <a href="https://www.chess.com/member/ballondor05" target="_blank" class="interest-link"><i class="fa-solid fa-chess"></i></a>
+        </p>
+        <p>
+          Travel &amp; Photography: Passionate about discovering new places <i class="fa-solid fa-plane"></i> and capturing life's moments <i class="fa-solid fa-camera"></i>
+        </p>
+        <p>
+          Community Support &amp; Kindness: Dedicated to volunteering, fostering social inclusion, and championing initiatives that spread positivity within local and global communities <i class="fa-solid fa-hands-helping"></i>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+<h1 class="sub-title">My Skills</h1>
+<section id="skills">
+  <!-- Technical Skills Column -->
+  <div class="skills-column">
+    <h1 class="heading1">Technical Skills</h1>
+    <div class="Technical-bars">
+      <!-- Python 95% -->
+      <div class="bar">
+        <i class="fa-brands fa-python" style="color:#ffe873;"></i>
+        <div class="info">
+          <span>Python</span>
+          <span class="percent">95%</span>
+        </div>
+        <div class="progress-line python">
+          <!-- The bar width matches the indicated percentage -->
+          <span style="width: 95%;"></span>
+        </div>
+      </div>
+      <!-- R 90% -->
+      <div class="bar">
+        <i class="fa-solid fa-r" style="color:#276DC3;"></i>
+        <div class="info">
+          <span>R</span>
+          <span class="percent">90%</span>
+        </div>
+        <div class="progress-line r">
+          <span style="width: 90%;"></span>
+        </div>
+      </div>
+      <!-- SQL 95% -->
+      <div class="bar">
+        <i class="fa-solid fa-database" style="color:#f29111;"></i>
+        <div class="info">
+          <span>SQL</span>
+          <span class="percent">95%</span>
+        </div>
+        <div class="progress-line sql">
+          <span style="width: 95%;"></span>
+        </div>
+      </div>
+      <!-- Java 85% -->
+      <div class="bar">
+        <i class="fa-brands fa-java" style="color:#007396;"></i>
+        <div class="info">
+          <span>Java</span>
+          <span class="percent">85%</span>
+        </div>
+        <div class="progress-line java">
+          <span style="width: 85%;"></span>
+        </div>
+      </div>
+      <!-- Excel 100% -->
+      <div class="bar">
+        <i class="fa-solid fa-file-excel" style="color:#217346;"></i>
+        <div class="info">
+          <span>Excel</span>
+          <span class="percent">100%</span>
+        </div>
+        <div class="progress-line excel">
+          <span style="width: 100%;"></span>
+        </div>
+      </div>
+      <!-- Tableau 90% -->
+      <div class="bar">
+        <i class="fa-solid fa-chart-bar" style="color:#E97627;"></i>
+        <div class="info">
+          <span>Tableau</span>
+          <span class="percent">90%</span>
+        </div>
+        <div class="progress-line tableau">
+          <span style="width: 90%;"></span>
+        </div>
+      </div>
+      <!-- Power BI 95% -->
+      <div class="bar">
+        <i class="fa-solid fa-chart-pie" style="color:#F2C811;"></i>
+        <div class="info">
+          <span>Power BI</span>
+          <span class="percent">95%</span>
+        </div>
+        <div class="progress-line powerbi">
+          <span style="width: 95%;"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Professional Skills Column -->
+  <div class="skills-column">
+    <h1 class="heading1">Professional Skills</h1>
+
+    <!-- First Row of 3 Radials -->
+    <div class="radial-bars">
+      <!-- Analytical Thinking (90%) -->
+      <div class="radial-bar">
+        <svg viewBox="0 0 200 200">
+          <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+          <!-- 90% fill => stroke-dashoffset ~ 50.2 -->
+          <circle class="path" cx="100" cy="100" r="80" style="stroke-dashoffset:50.2;"></circle>
+        </svg>
+        <div class="percentage">90%</div>
+        <div class="text">Analytical Thinking</div>
+      </div>
+
+      <!-- Communication (85%) -->
+      <div class="radial-bar">
+        <svg viewBox="0 0 200 200">
+          <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+          <!-- 85% fill => stroke-dashoffset ~ 75.3 -->
+          <circle class="path" cx="100" cy="100" r="80" style="stroke-dashoffset:75.3;"></circle>
+        </svg>
+        <div class="percentage">85%</div>
+        <div class="text">Communication</div>
+      </div>
+
+      <!-- Collaboration (85%) -->
+      <div class="radial-bar">
+        <svg viewBox="0 0 200 200">
+          <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+          <circle class="path" cx="100" cy="100" r="80" style="stroke-dashoffset:75.3;"></circle>
+        </svg>
+        <div class="percentage">85%</div>
+        <div class="text">Collaboration</div>
+      </div>
+    </div>
+
+    <!-- Two line breaks for spacing -->
+    <br><br>
+
+    <!-- Second Row of 2 Radials -->
+    <div class="radial-bars">
+      <!-- Project Management (80%) -->
+      <div class="radial-bar">
+        <svg viewBox="0 0 200 200">
+          <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+          <!-- 80% => stroke-dashoffset ~ 100.4 -->
+          <circle class="path" cx="100" cy="100" r="80" style="stroke-dashoffset:100.4;"></circle>
+        </svg>
+        <div class="percentage">80%</div>
+        <div class="text">Project Management</div>
+      </div>
+
+      <!-- Leadership (75%) -->
+      <div class="radial-bar">
+        <svg viewBox="0 0 200 200">
+          <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+          <!-- 75% => stroke-dashoffset ~ 125.5 -->
+          <circle class="path" cx="100" cy="100" r="80" style="stroke-dashoffset:125.5;"></circle>
+        </svg>
+        <div class="percentage">75%</div>
+        <div class="text">Leadership</div>
+      </div>
+    </div>
+  </div>
+</section>
+  
+  <!-- Tech Projects Section -->
+  <section id="tech-projects">
+    <div class="main-text">
+      <h2>
+        <span class="latest">Latest</span> 
+        <span>Tech Projects</span>
+      </h2>
+      <div class="portfolio-content tech-grid">
+        <!-- Project #1 -->
+        <div class="row">
+          <img src="./images/ChatGPT Image Apr 13, 2025 at 02_14_04 AM.png" alt="Tech Project Image 2" />
+          <div class="layer">
+            <h5>Superstore Tableau Visualization</h5>
+            <p>Tableau hands-on practice.</p>
+            <a href="https://public.tableau.com/views/Trainingapprenticeship/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Project #2 -->
+        <div class="row">
+          <img src="./images/ChatGPT Image Apr 13, 2025 at 02_15_17 AM.png" alt="Tech Project Image 3" />
+          <div class="layer">
+            <h5>Titanic Survival Analysis Project</h5>
+            <p>Predicting passenger survival on the Titanic using statistical and machine learning models (RStudio).</p>
+            <a href="https://github.com/Playmaker08/Hands-on-Projects/blob/main/titanic_capstone.txt" target="_blank">
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Project #3 -->
+        <div class="row">
+          <img src="./images/ChatGPT Image Apr 13, 2025 at 02_20_08 AM.png" alt="Tech Project Image 4" />
+          <div class="layer">
+            <h5>Immigration Visualization</h5>
+            <p>Applied different visualizations to identify the immigration trend from 1980-2014 (Jupyter Notebook).</p>
+            <a href="https://github.com/Playmaker08/Hands-on-Projects/blob/main/Canada%20immigrants%20visualization.ipynb" target="_blank">
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Project #4 -->
+        <div class="row">
+          <img src="./images/ChatGPT Image Apr 13, 2025 at 02_21_58 AM.png" alt="Tech Project Image 5" />
+          <div class="layer">
+            <h5>MindBloom VR</h5>
+            <p>Personal Product Owner Showcase.</p>
+            <a href="https://www.canva.com/design/DAGfxyy7eKE/-W_JYY5fce59SwHhHg3usQ/edit?utm_content=DAGfxyy7eKE&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" target="_blank">
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Business Projects Section (formerly Liberal Arts Projects) -->
+  <section id="business-projects">
+    <div class="main-text">
+      <h2>
+        <span class="latest">Latest</span> 
+        <span>Business Projects</span>
+      </h2>
+      <div class="portfolio-content business-grid">
+        <!-- Project #1 -->
+        <div class="row">
+          <img src="./images/ChatGPT Image Apr 13, 2025 at 02_26_40 AM.png" alt="Business Project Image 1" />
+          <div class="layer">
+            <h5>US Housing Affordability Data System (Capstone Project)</h5>
+            <p>A comprehensive data analysis project aimed at identifying key drivers of housing market affordability in the United States (Advanced MS Excel).</p>
+            <a href="./images/Market Value Model of Housing Units.xlsx" target="_blank">
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Project #2 -->
+        <div class="row">
+          <img src="./images/ChatGPT Image Apr 13, 2025 at 02_28_25 AM.png" alt="Business Project Image 2" />
+          <div class="layer">
+            <h5>Business Analytics with Solver</h5>
+            <p>Solved 20 business optimization problems using "Solver" (built complicated models of constraints).</p>
+            <a href="./images/BA.xlsx" target="_blank">
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Project #3 -->
+        <div class="row">
+          <img src="./images/s-l1200.jpg" alt="Business Project Image 3" />
+          <div class="layer">
+            <h5>Huawei Mate XT</h5>
+            <p>Conducted product showcase and planned product release phases.</p>
+            <a href="./images/Big Case Huawei.pdf" target="_blank">
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+        <!-- Project #4 -->
+        <div class="row">
+          <img src="./images/ChatGPT Image Apr 13, 2025 at 02_35_13 AM.png" alt="Business Project Image 4" />
+          <div class="layer">
+            <h5>DCF Model Evaluation</h5>
+            <p>Developed a DCF model based on given financial statements.</p>
+            <a href="images/DCF.xlsx" target="_blank">
+              <i class="bx bx-link-external"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services" id="services-offered">
+    <div class="container">
+      <h1 class="sub-title">What I <span>Offer</span></h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-chart-line" style="color:#00eeff"></i>
+          <h2>Data Analysis</h2>
+          <p>Transforming raw datasets into actionable insights using Python, R, and SQL.</p>
+          <a href="#" class="read">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-calculator" style="color:#00eeff"></i>
+          <h2>Financial Modeling</h2>
+          <p>Developing and interpreting valuation models, risk assessments, and portfolio strategies to support informed decision-making.</p>
+          <a href="#" class="read">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-bullhorn" style="color:#00eeff"></i>
+          <h2>Marketing Analytics</h2>
+          <p>Optimizing marketing campaigns by tracking key performance metrics, analyzing consumer behavior, and refining targeting strategies.</p>
+          <a href="#" class="read">Learn more</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section class="certificates" id="certificates">
+    <h1 class="sub-title">My <span>Certificates</span></h1>
+    <div class="cert-container">
+      <div class="cert-item">
+        <h3>Data Engineer Associate</h3>
+        <p>DataCamp</p>
+        <a href="./images/1743365621502.pdf" target="_blank" rel="noopener noreferrer">
+          View Certificate <i class="bx bx-right-arrow-alt"></i>
+        </a>
+      </div>
+      <div class="cert-item">
+        <h3>(CAS Exam 2 Preparation) NACTSC2.00: Financial Math for Actuaries: From Loans to Bonds to Immunization</h3>
+        <p>EdX: University of Wisconsin-Madison</p>
+        <a href="https://courses.edx.org/certificates/6bf620cfa6b3481a9c561477637e658f" target="_blank" rel="noopener noreferrer">
+          View Certificate <i class="bx bx-right-arrow-alt"></i>
+        </a>
+      </div>
+      <div class="cert-item">
+        <h3>Bloomberg Market Concepts</h3>
+        <p>Bloomberg</p>
+        <a href="https://portal.bloombergforeducation.com/certificates/6ZNWGxnt5rcjymALLAKQCoG4" target="_blank" rel="noopener noreferrer">
+          View Certificate <i class="bx bx-right-arrow-alt"></i>
+        </a>
+      </div>
+      <div class="cert-item">
+        <h3>Bank of America - Investment Banking Job Simulation</h3>
+        <p>Forage</p>
+        <a href="https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/fMCqmt8qR4G85Puue/Hi8MJQE5T3MeTRWQR_fMCqmt8qR4G85Puue_23XwXCKt3v837LjXH_1735717022742_completion_certificate.pdf" target="_blank" rel="noopener noreferrer">
+          View Certificate <i class="bx bx-right-arrow-alt"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-wrapper">
+      <!-- Left Column: Contact Text & Icons -->
+      <div class="contact-text">
+        <h2><strong class="light-green">Contact Me</strong></h2>
+        <br>
+        <h4>Let’s Work Together</h4>
+        <br><br>
+        <p>
+          If you’d like to collaborate or have any questions, feel free to reach out.
+        </p>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> Greencastle, Indiana, United States</li>
+          <li><i class="bx bxs-send"></i> nguyenandy1402@gmail.com</li>
+          <li><i class="bx bxs-phone"></i> (765) 712-2456</li>
+        </ul>
+        <div class="contact-icons">
+          <a href="https://www.facebook.com/ongvuangoaihanganh/"><i class="bx bxl-facebook-circle"></i></a>
+          <a href="https://www.instagram.com/andynguyen_21/"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/andynguyen08/"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+      <!-- Right Column: Contact Form -->
+      <div class="contact-form">
+        <form action="#">
+          <input type="text" placeholder="Enter Your Name" required />
+          <input type="email" placeholder="Enter Your Email" required />
+          <input type="text" placeholder="Enter Your Subject" />
+          <textarea cols="40" rows="6" placeholder="Enter Your Message"></textarea>
+          <input type="submit" value="Submit" class="send" />
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <div class="last-text">
+    <p>Developed with enthusiasm by Andy Nguyen © 2025</p>
+  </div>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
+
+  <!-- JavaScript File -->
+  <script src="script.js"></script>
+</body>
+</html>
